@@ -23,6 +23,11 @@ busKeys.forEach((key) => {
 
 console.log(data);
 
-data.forEach((perturbation) => {
+// 1) Transformer l'objet data en tableau de perturbations
+const perturbations = Object.values(data);
+
+// 2) Parcourir ce tableau et afficher le texte
+perturbations.forEach((perturbation) => {
   console.log(perturbation.texte);
 });
+

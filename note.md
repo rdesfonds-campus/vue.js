@@ -82,7 +82,7 @@ Quand je mets une fonction dans un objet, ça devient une méthode qui peut util
 ## exercice 3 : objects
 
 ### 3.1 –Object.keys
-Dans cet exercice, je veux afficher toutes les informations d'un objet bussous la forme clé valeur(par exemple id 3221).
+Dans cet exercice, je veux afficher toutes les informations d'un objet bus sous la forme clé valeur(par exemple id 3221).
 
 Object.keys(bus)me renvoyer un tableau contenant toutes les clés de l'objet bus, par exemple ['vehicle', 'id', 'line', 'paint', 'garage', 'equipments'].
 
@@ -101,7 +101,7 @@ Idée à retenir :
 Object.keys(obj)me donne la liste des noms de propriétés, et avec cette liste je peux afficher dynamiquement clé valeursans écrire chaque propriété à la main.
 
 ### 3.2 – Parcourir un tableau d'objets
-Dans cet exercice, dataest un tableau d'objets (les perturbations du réseau). Je dois afficher, pour chaque perturbation, son champion texte.
+Dans cet exercice, data est un tableau d'objets (les perturbations du réseau). Je dois afficher, pour chaque perturbation, son champion texte.
 
 Je fais simplement une boucle sur le tableau :
 
@@ -111,7 +111,10 @@ data.forEach((item) => {
 });
 Idée à retenir :
 
-Quand j'ai un tableau d'objets, je peux utiliser forEachpour passer sur chaque objet, puis accéder à la propriété qui m'intéresse ( item.texte, item.id, etc.).
+Quand j'ai un tableau d'objets, je peux utiliser forEach pour passer sur chaque objet, puis accéder à la propriété qui m'intéresse ( item.texte, item.id, etc.).
+
+Object.keys(bus) → tableau des clés de bus.
+Object.values(data) → tableau des valeurs (ici : les perturbations) de data.
 
 ## exercice 4 destructuring
 
