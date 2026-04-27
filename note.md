@@ -140,3 +140,52 @@ perturbations.forEach(({ texte, dateDebut, dateFin }) => {
 });
 
 ## exercice 5 - import
+Dans cet exercice, je découpe mon code en plusieurs fichiers pour qu'il soit plus propre et plus facile à gérer. J'utilise export pour rendre certaines fonctions disponibles à l'extérieur d'un fichier et import pour les utiliser là où j'en ai besoin.
+
+``` javascript
+// Dans math.js :
+export const add = (a, b) => a + b;
+
+// Dans main.js :
+import { add } from './math.js';
+console.log(add(2, 3)); // 5 
+```
+
+L'idée à retenir pour moi :
+Un module est comme une boîte à outils : j'exporte les outils (fonctions, variables) dont j'ai besoin dans mon fichier principal et je les importe quand il faut les utiliser. Cela permet d'avoir des fichiers plus courts et spécialisés.
+
+## Exercice 6 : Promesses (Promises)
+
+Ici, j'apprends à gérer des actions qui prennent du temps (comme aller chercher des données sur internet) sans bloquer le reste de mon code. Une promesse représente une opération qui n'est pas encore terminée, mais qui le sera plus tard.
+
+```javascript
+const monAction = new Promise((resolve, reject) => {
+  // Si tout va bien :
+  resolve("Succès !");
+  // Si ça rate :
+  // reject("Erreur...");
+});
+
+monAction.then((data) => console.log(data)).catch((err) => console.error(err));
+```
+L'idée à retenir pour moi :
+La promesse est soit en attente, soit réussie (resolve), soit en échec (reject). .then() permet de traiter le résultat quand il arrive, et .catch() permet de gérer proprement les erreurs.
+
+
+## Exercice 7 : Async / Await
+
+Cet exercice est la suite logique des promesses. C'est une manière plus moderne et plus simple de lire du code asynchrone, en le faisant ressembler à du code classique (synchrone).
+
+```javascript
+const chargerDonnees = async () => {
+  try {
+    const reponse = await fetch('url-api');
+    const data = await reponse.json();
+    console.log(data);
+  } catch (error) {
+    console.error("Problème :", error);
+  }
+};
+```
+L'idée à retenir pour moi :
+Le mot-clé async devant une fonction me permet d'utiliser await à l'intérieur. await dit littéralement à JavaScript : "Attends que cette promesse soit résolue avant de passer à la ligne suivante". C'est beaucoup plus lisible que d'enchaîner les .then().
