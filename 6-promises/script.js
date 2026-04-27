@@ -1,4 +1,4 @@
-/*Section 1 */
+/*Section 1 
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -29,13 +29,14 @@ first()
   .catch((error) => {
     console.error(error.message);
   })
-  .then(() => third());
+  .then(() => third());*/
 
 
-/* Section 2
+/*
+// Section 2
 
 function getHumanSpecies() {
-  return fetch('https://swapi.dev/api/species/1/')
+  return fetch('https://swapi.py4e.com/api/species/1/')
     .then(response => response.json());
 }
 
@@ -74,29 +75,18 @@ getAllPeopleNamesFromSpecies();
 */
 
 
-/* scetion 3
+// section 3
 
 function waitForUserChoice() {
   return new Promise((resolve, reject) => {
-    const okBtn = document.getElementById('okBtn');
-    const cancelBtn = document.getElementById('cancelBtn');
+    const okBtn = document.getElementById("okBtn");
+    const cancelBtn = document.getElementById("cancelBtn");
 
-    okBtn.addEventListener('click', () => {
-      resolve('Ok clicked');
-    }, { once: true });
-
-    cancelBtn.addEventListener('click', () => {
-      reject('Cancel clicked');
-    }, { once: true });
+    okBtn.addEventListener("click", () => resolve("Ok clicked"), { once: true });
+    cancelBtn.addEventListener("click", () => reject("Cancel clicked"), { once: true });
   });
 }
 
 waitForUserChoice()
-  .then(message => {
-    console.log(message);
-  })
-  .catch(message => {
-    console.log(message);
-  });
-
-*/
+  .then((message) => console.log(message))
+  .catch((message) => console.log(message));
