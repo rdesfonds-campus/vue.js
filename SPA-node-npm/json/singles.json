@@ -1,0 +1,67 @@
+{
+    "singles": [
+        {"année": 2010, "classement": [
+            {"titre": "Tik Tok", "artiste": "Kesha"},
+            {"titre": "Bad Romance", "artiste": "Lady Gaga"},
+            {"titre": "California Gurls", "artiste": "Katy Perry"}
+        ]},
+        {"année": 2011, "classement": [
+            {"titre": "Rolling in the Deep", "artiste": "Adele"},
+            {"titre": "Party Rock Anthem", "artiste": "LMFAO"},
+            {"titre": "Give Me Everything", "artiste": "Pitbull"}
+        ]},
+        {"année": 2012, "classement": [
+            {"titre": "Somebody That I Used to Know", "artiste": "Gotye"},
+            {"titre": "Call Me Maybe", "artiste": "Carly Rae Jepsen"},
+            {"titre": "We Are Young", "artiste": "Fun."}
+        ]
+        }
+        {"année": 2013, "classement": [
+            {"titre": "Blurred Lines", "artiste": "Robin Thicke"},
+            {"titre": "Get Lucky", "artiste": "Daft Punk"},
+            {"titre": "Royals", "artiste": "Lorde"}
+        ]
+        }
+        {"année": 2014, "classement": [
+            {"titre": "Happy", "artiste": "Pharrell Williams"},
+            {"titre": "All About That Bass", "artiste": "Meghan Trainor"},
+            {"titre": "Shake It Off", "artiste": "Taylor Swift"}
+        ]
+        }
+        {"année": 2015, "classement": [
+            {"titre": "Uptown Funk", "artiste": "Mark Ronson ft. Bruno Mars"},
+            {"titre": "Thinking Out Loud", "artiste": "Ed Sheeran"},
+            {"titre": "See You Again", "artiste": "Wiz Khalifa ft. Charlie Puth"}
+        ]
+        }
+        {"année": 2016, "classement": [
+            {"titre": "Love Yourself", "artiste": "Justin Bieber"},
+            {"titre": "Sorry", "artiste": "Justin Bieber"},
+            {"titre": "One Dance", "artiste": "Drake"}
+        ]
+        }
+        {"année": 2017, "classement": [
+            {"titre": "Shape of You", "artiste": "Ed Sheeran"},
+            {"titre": "Despacito", "artiste": "Luis Fonsi ft. Daddy Yankee"},
+            {"titre": "That's What I Like", "artiste": "Bruno Mars"}
+        ]
+        }
+        {"année": 2018, "classement": [
+            {"titre": "God's Plan", "artiste": "Drake"},
+            {"titre": "In My Feelings", "artiste": "Drake"},
+            {"titre": "Havana", "artiste": "Camila Cabello"}
+        ]
+        }
+            {"année": 2019, "classement": [
+                {"titre": "Old Town Road", "artiste": "Lil Nas X"},
+                {"titre": "Bad Guy", "artiste": "Billie Eilish"},
+                {"titre": "Señorita", "artiste": "Shawn Mendes & Camila Cabello"}
+            ]
+            }
+    ]
+}
+
+
+/* On souhaite représenter le classement des 3 singles (titre + artiste) ayant fait le plus de ventes en France, chaque année entre 2010 et 2019 (source Wikipedia) 
+* Trouvez des exemples de données publiques disponibles sur le web au format JSON
+* À partir d'une chaîne de caractère au format JSON, écrivez le code Javascript permettant de récupérer un objet Javascript, puis de regénérer la chaîne de caractère initiale. La documentation suivante pourra vous être utile : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/JSON */

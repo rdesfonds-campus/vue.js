@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lire du JSON</title>
+</head>
+<body>
+  <h1>Exemple JSON</h1>
+  <pre id="resultat"></pre>
+
+  <script>
+    async function chargerDonnees() {
+      const reponse = await fetch('https://pokeapi.co/api/v2/pokemon/pikachu');
+      const donnees = await reponse.json();
+      document.getElementById('resultat').textContent = JSON.stringify(donnees, null, 2);
+    }
+
+    chargerDonnees();
+  </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+    "elections": [
+        {"nom": "Charles de Gaulle", "mandat": "1959-1969"},
+        {"nom": "Georges Pompidou", "mandat": "1969-1974"},
+        {"nom": "Valéry Giscard d'Estaing", "mandat": "1974-1981"},
+        {"nom": "François Mitterrand", "mandat": "1981-1995"},
+        {"nom": "Jacques Chirac", "mandat": "1995-2007"},
+        {"nom": "Nicolas Sarkozy", "mandat": "2007-2012"},
+        {"nom": "François Hollande", "mandat": "2012-2017"},
+        {"nom": "Emmanuel Macron", "mandat": "2017-2027"}
+    ]
+}
