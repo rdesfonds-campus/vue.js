@@ -1,47 +1,52 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div id="app">
+    <h1 :class="{ red: isRed }">{{ title }}</h1>
+    <h2 :class="{ red: isRed }">Sous-titre</h2>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+    <input v-model="draftTitle" type="text" />
+    <button @click="updateTitle">Mettre à jour le titre</button>
 
-  <main>
-    <TheWelcome />
-  </main>
+    <label>
+      <input v-model="isRed" type="checkbox" />
+      Mettre les titres en rouge
+    </label>
+
+    <br />
+
+    <label>
+      <input v-model="showImage" type="checkbox" />
+      Afficher l'image
+    </label>
+
+    <img
+      v-if="showImage"
+      src="https://vuejs.org/images/logo.png"
+      alt="Logo Vue"
+      width="120"
+    />
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<script>
+export default {
+  data() {
+    return {
+      title: 'Bonjour Vue',
+      draftTitle: '',
+      isRed: false,
+      showImage: true
+    }
+  },
+  methods: {
+    updateTitle() {
+      this.title = this.draftTitle
+    }
+  }
 }
+</script>
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+<style>
+.red {
+  color: red;
 }
 </style>
