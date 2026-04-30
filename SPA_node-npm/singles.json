@@ -1,0 +1,82 @@
+[
+  {
+    "annee": 2010,
+    "top3": [
+      { "titre": "Waka Waka (This Time for Africa)", "artiste": "Shakira" },
+      { "titre": "Alors on danse", "artiste": "Stromae" },
+      { "titre": "Mignon Mignon", "artiste": "René la Taupe" }
+    ]
+  },
+  {
+    "annee": 2011,
+    "top3": [
+      { "titre": "Party Rock Anthem", "artiste": "LMFAO" },
+      { "titre": "Rolling in the Deep", "artiste": "Adele" },
+      { "titre": "Over the Rainbow", "artiste": "Israel Kamakawiwo'ole" }
+    ]
+  },
+  {
+    "annee": 2012,
+    "top3": [
+      { "titre": "Je l'aime à mourir", "artiste": "Shakira" },
+      { "titre": "Somebody That I Used to Know", "artiste": "Gotye feat. Kimbra" },
+      { "titre": "Call Me Maybe", "artiste": "Carly Rae Jepsen" }
+    ]
+  },
+  {
+    "annee": 2013,
+    "top3": [
+      { "titre": "Get Lucky", "artiste": "Daft Punk" },
+      { "titre": "Blurred Lines", "artiste": "Robin Thicke" },
+      { "titre": "Papaoutai", "artiste": "Stromae" }
+    ]
+  },
+  {
+    "annee": 2014,
+    "top3": [
+      { "titre": "Happy", "artiste": "Pharrell Williams" },
+      { "titre": "Prayer in C", "artiste": "Lilly Wood & The Prick" },
+      { "titre": "Chandelier", "artiste": "Sia" }
+    ]
+  },
+  {
+    "annee": 2015,
+    "top3": [
+      { "titre": "Uptown Funk", "artiste": "Mark Ronson feat. Bruno Mars" },
+      { "titre": "Cheerleader", "artiste": "Omi" },
+      { "titre": "Lean On", "artiste": "Major Lazer & DJ Snake" }
+    ]
+  },
+  {
+    "annee": 2016,
+    "top3": [
+      { "titre": "This Girl", "artiste": "Kungs vs Cookin' on 3 Burners" },
+      { "titre": "Don't Be So Shy", "artiste": "Imany" },
+      { "titre": "Cheap Thrills", "artiste": "Sia" }
+    ]
+  },
+  {
+    "annee": 2017,
+    "top3": [
+      { "titre": "Attention", "artiste": "Charlie Puth" },
+      { "titre": "Feels", "artiste": "Calvin Harris feat. Pharrell Williams & Katy Perry" },
+      { "titre": "Shape of You", "artiste": "Ed Sheeran" }
+    ]
+  },
+  {
+    "annee": 2018,
+    "top3": [
+      { "titre": "Mafiosa", "artiste": "Lartiste feat. Caroliina" },
+      { "titre": "Djadja", "artiste": "Aya Nakamura" },
+      { "titre": "Bella Ciao", "artiste": "Maître Gims, Vitaa, Dadju, Slimane & Naestro" }
+    ]
+  },
+  {
+    "annee": 2019,
+    "top3": [
+      { "titre": "Tout oublier", "artiste": "Angèle feat. Roméo Elvis" },
+      { "titre": "La vie est belle", "artiste": "Naps" },
+      { "titre": "Soldat", "artiste": "Ninho" }
+    ]
+  }
+]

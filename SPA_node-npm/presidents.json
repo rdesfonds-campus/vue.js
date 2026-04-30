@@ -1,0 +1,42 @@
+[
+  {
+    "nom": "Charles de Gaulle",
+    "dateElection": "1958-12-21",
+    "dureeMandat": 8
+  },
+  {
+    "nom": "Georges Pompidou",
+    "dateElection": "1969-06-15",
+    "dureeMandat": 5
+  },
+  {
+    "nom": "Valéry Giscard d'Estaing",
+    "dateElection": "1974-05-19",
+    "dureeMandat": 7
+  },
+  {
+    "nom": "François Mitterrand",
+    "dateElection": "1981-05-10",
+    "dureeMandat": 14
+  },
+  {
+    "nom": "Jacques Chirac",
+    "dateElection": "1995-05-07",
+    "dureeMandat": 12
+  },
+  {
+    "nom": "Nicolas Sarkozy",
+    "dateElection": "2007-05-06",
+    "dureeMandat": 5
+  },
+  {
+    "nom": "François Hollande",
+    "dateElection": "2012-05-06",
+    "dureeMandat": 5
+  },
+  {
+    "nom": "Emmanuel Macron",
+    "dateElection": "2017-05-07",
+    "dureeMandat": 10
+  }
+]

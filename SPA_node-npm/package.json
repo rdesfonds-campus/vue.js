@@ -1,0 +1,17 @@
+{
+  "name": "spa_node-npm",
+  "version": "1.0.0",
+  "description": "En introduction, prenez un moment pour (re)découvrir le format de données JSON, qui sera très largement utilisé dans ce module et dans de nombreux projets par la suite.\r Quelques ressources utiles : \r * https://la-cascade.io/json-pour-les-debutants/\r * https://www.alsacreations.com/article/lire/1675-json-stockage-leger-pratique-donnees-multitypes.html",
+  "main": "json-tests.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "imagemin": "^8.0.1",
+    "imagemin-pngquant": "^10.0.0"
+  }
+}
