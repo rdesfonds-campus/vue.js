@@ -8,7 +8,8 @@
     <br>
 
     <router-link to="/ville">Voir ma ville</router-link>
-
+    <br />
+    <router-link to="/carte">Voir la carte</router-link>
     <router-view />
   </main>
 </template>
