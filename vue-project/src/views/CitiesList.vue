@@ -2,7 +2,11 @@
   <main>
     <h1>Météo - Liste des villes</h1>
 
-    <div class="cities-list">
+    <p v-if="loading">Requête en cours...</p>
+    <p v-else-if="error" class="error">{{ error }}</p>
+    <p v-else-if="cities.length === 0">Aucune donnée à afficher</p>
+
+    <div v-else class="cities-list">
       <City
         v-for="city in cities"
         :key="city.id"
@@ -25,22 +29,40 @@ export default {
   },
   data() {
     return {
-      cities: [
-        {
-          id: 1,
-          name: 'Ville 1',
-          weather: 'Ensoleillé',
-          temperature: 22.0,
-          updatedAt: new Date()
-        },
-        {
-          id: 2,
-          name: 'Ville 2',
-          weather: 'Peu nuageux',
-          temperature: 19.5,
-          updatedAt: new Date()
-        }
-      ]
+      cities: [],
+      loading: false,
+      error: null
+    }
+  },
+  async created() {
+    this.loading = true
+    this.error = null
+
+    const url = 'https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m&past_days=0&forecast_days=7'
+
+    try {
+      const response = await fetch(url)
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error('Erreur lors de la récupération des données météo')
+      }
+
+      if (!data.hourly || !data.hourly.time || !data.hourly.temperature_2m) {
+        throw new Error('Format de données inattendu')
+      }
+
+      this.cities = data.hourly.time.slice(0, 5).map((time, index) => ({
+        id: index + 1,
+        name: `Prévision ${index + 1}`,
+        weather: 'Température prévue',
+        temperature: data.hourly.temperature_2m[index],
+        updatedAt: new Date(time)
+      }))
+    } catch (error) {
+      this.error = error.message
+    } finally {
+      this.loading = false
     }
   }
 }
@@ -50,5 +72,9 @@ export default {
 .cities-list {
   display: grid;
   gap: 16px;
+}
+
+.error {
+  color: red;
 }
 </style>
