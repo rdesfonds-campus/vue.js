@@ -52,13 +52,20 @@ export default {
         throw new Error('Format de données inattendu')
       }
 
-      this.cities = data.hourly.time.slice(0, 5).map((time, index) => ({
-        id: index + 1,
-        name: `Prévision ${index + 1}`,
-        weather: 'Température prévue',
-        temperature: data.hourly.temperature_2m[index],
-        updatedAt: new Date(time)
-      }))
+      this.cities = data.hourly.time.slice(0, 5).map((time, index) => {
+  const date = new Date(time)
+
+  return {
+    id: index + 1,
+    name: `Prévision ${date.toLocaleTimeString('fr-FR', {
+      hour: '2-digit',
+      minute: '2-digit'
+    })}`,
+    weather: 'Température prévue',
+    temperature: data.hourly.temperature_2m[index],
+    updatedAt: date
+  }
+})
     } catch (error) {
       this.error = error.message
     } finally {
